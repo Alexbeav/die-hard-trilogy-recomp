@@ -1,0 +1,29 @@
+{
+  "cue_path": "Die Hard Trilogy (USA) (Rev 1).cue",
+  "cue_name": "Die Hard Trilogy (USA) (Rev 1).cue",
+  "bin_name": "Die Hard Trilogy (USA) (Rev 1).bin",
+  "track_count": 21,
+  "data_track_size": 557503968,
+  "data_track_md5": "f797b67eab4631c568c4936a4258dd3a",
+  "data_track_sha1": "c0fd571981c7f6f7c27defcd74c99dda90c67b5c",
+  "data_track_crc32": "eddc3bf3",
+  "boot_exe": "SLUS_001.19",
+  "serial": "SLUS-00119",
+  "serial_exe": "SLUS_001.19",
+  "volume_id": "DHT",
+  "display_name": "die-hard-trilogy-",
+  "load_address": "0x8001D500",
+  "entry_pc": "0x80021530",
+  "text_size": "0x00092800",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "f6e66d0a6224f781e86dd96591f8ef4d99019a7f4188fc18f49eadbabdfb8137",
+  "boot_exe_sha256": "312b17f4b57be94d264fb86e2380ce7eba589afea23bb1a0f8fc1c16cca680db",
+  "seed_count": 252,
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

@@ -1,0 +1,53 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Die Hard Trilogy"
+id = "SLUS-00119"
+players = 1
+exe = "disc/SLUS_001.19"
+disc = ""
+load_address = "0x8001D500"
+entry_pc = "0x80021530"
+text_size = "0x00092800"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Die Hard Trilogy (USA) (Rev 1).bin"
+cue_name = "Die Hard Trilogy (USA) (Rev 1).cue"
+boot_exe = "SLUS_001.19"
+known_sizes = [557503968]
+known_md5 = [
+  "f797b67eab4631c568c4936a4258dd3a",
+]
+known_sha1 = [
+  "c0fd571981c7f6f7c27defcd74c99dda90c67b5c",
+]
+known_crc32 = [
+  "eddc3bf3",
+]
+
+[recompiler]
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "die-hard-trilogy- Recompiled"
+memcard_dir = "saves"
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 21
+required_disc_fp = "f6e66d0a6224f781e86dd96591f8ef4d99019a7f4188fc18f49eadbabdfb8137"
