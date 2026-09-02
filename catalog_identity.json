@@ -20,10 +20,10 @@
     ],
     "require_cue": true,
     "data_track": {
-      "size": 557503968,
-      "md5": "f797b67eab4631c568c4936a4258dd3a",
-      "sha1": "c0fd571981c7f6f7c27defcd74c99dda90c67b5c",
-      "crc32": "eddc3bf3"
+      "size": 114928128,
+      "md5": "07fb588670cf9d80ec40f1bd52620146",
+      "sha1": "2d24572e92415e09c37b68c83ba8b8947aee1ce4",
+      "crc32": "18e1c83c"
     },
     "disc_fp": "f6e66d0a6224f781e86dd96591f8ef4d99019a7f4188fc18f49eadbabdfb8137"
   },
@@ -41,6 +41,7 @@
   "notes": [
     "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
     "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
-    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity).",
+    "data_track identifies the first BIN in the canonical multi-BIN CUE; game.toml also accepts the owned merged-BIN compatibility identity."
   ]
 }

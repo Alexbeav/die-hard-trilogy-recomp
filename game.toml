@@ -18,15 +18,18 @@ out_dir = "disc"
 bin_name = "Die Hard Trilogy (USA) (Rev 1).bin"
 cue_name = "Die Hard Trilogy (USA) (Rev 1).cue"
 boot_exe = "SLUS_001.19"
-known_sizes = [557503968]
+known_sizes = [557503968, 114928128]
 known_md5 = [
   "f797b67eab4631c568c4936a4258dd3a",
+  "07fb588670cf9d80ec40f1bd52620146",
 ]
 known_sha1 = [
   "c0fd571981c7f6f7c27defcd74c99dda90c67b5c",
+  "2d24572e92415e09c37b68c83ba8b8947aee1ce4",
 ]
 known_crc32 = [
   "eddc3bf3",
+  "18e1c83c",
 ]
 
 [recompiler]

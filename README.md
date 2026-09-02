@@ -99,7 +99,8 @@ but their release jobs are deferred under the Wave 2 Windows-first exception.
 ## Corrected setup relaunch
 
 Public `v0.3.0` can request the wrong executable after the first local build.
-The `v0.3.3` source uses `Die_Hard_Trilogy_Recompiled` in CMake, the setup relaunch, and the packager.
+The `v0.3.4` source uses `Die_Hard_Trilogy_Recompiled` in CMake, the setup relaunch, and the packager.
+It accepts the canonical USA Rev 1 multi-BIN Track 01 identity and the supported merged-BIN compatibility identity.
 The source parity gate passes. Exact-ZIP automatic relaunch remains a release gate.
 ## License boundary
 
