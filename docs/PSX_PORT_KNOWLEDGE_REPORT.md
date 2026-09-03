@@ -3,7 +3,7 @@
 - Date: 2026-08-31
 - Retail identity: USA NTSC-U `SLUS-00119`
 - Architecture lane: source-only owned-input setup host
-- Release target: Windows x64, version `0.3.4`
+- Release target: Windows x64, Linux x64, macOS ARM64, and macOS x64; candidate version `0.3.5`
 - License boundary: portfolio files use GPL-3.0-only; dependencies keep their licenses
 
 ## Current state
@@ -14,12 +14,12 @@ locally. Exact-package setup, startup, and remote-byte gates remain open.
 
 ## Release controls
 
-- Framework: afe9ab299aab0eeba1cc31f81bc4baf4e7fb2ab7
+- Framework: f3786825411983a06257865db7bd7538fc68267a
 - recomp-ui: 4eda65430a431e5685ae0c515ebcd912c7843bff
 - RetComM Studio: 249422969c1c59ac2a1f8aa2299e876a7133998e
 - Distribution: owned input only
-- Platform claim: Windows x64 only
-- Deferred work: Linux x64, macOS ARM64, and macOS x64 CI jobs
+- Platform claim: pending exact-package gates on all four targets
+- Deferred work: exact-package native gates and R3/R4 publication
 
 ## Open gates
 
@@ -48,3 +48,10 @@ hashes the first BIN named by a CUE. The owned canonical Track 01 identity is
 `2d24572e92415e09c37b68c83ba8b8947aee1ce4`. Close this gate only after an
 exact-package canonical multi-BIN test passes. See `PSX-PUB-020`, `FAIL-115`,
 and `_runs/knowledge/reviews/2026-09-02-disc-verification-wrong-dump.md`.
+
+## v0.3.5 three-platform refresh
+
+The source now binds the package-only privacy correction and targets Windows
+x64, Linux x64, macOS ARM64, and macOS x64. The replacement build-only CI,
+complete archive audit, and native package gates remain required. This source
+change does not publish a release or claim platform support.

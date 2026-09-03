@@ -1,6 +1,6 @@
 # Die Hard Trilogy release feasibility
 
-Status: `bootstrap_verified`; Windows package pending R2 and R3
+Status: `bootstrap_verified`; four-platform `v0.3.5` package pending exact-package gates
 
 The operator confirmed that the promoted private build reaches gameplay. This
 meets the `bootstrap_verified` boundary. The source-only Windows package
@@ -28,3 +28,11 @@ generation, rebuild, automatic-launch, and bounded runtime gates on Pegasus.
 It failed the distribution gate because two non-SDK framework scripts exposed
 a developer profile path. Packaging revision `r2` removes only those scripts.
 The final `v0.3.4` exact-package gate remains required.
+
+## v0.3.5 three-platform refresh
+
+The candidate targets Windows x64, Linux x64, macOS Apple Silicon ARM64, and
+macOS Intel x64. The setup package uses an additive framework correction that
+excludes two non-SDK helpers with developer-machine paths. Each exact package
+must pass the payload, setup, startup, responsiveness, and clean-exit gates on
+its declared platform before publication.
