@@ -23,3 +23,11 @@ merged CUE on Pegasus. It generated, rebuilt, launched through the setup helper,
 and exited cleanly. The first package included two non-SDK scripts with a
 developer path. Packaging revision `r2` removes only those files. Shared
 records: `PSX-PUB-020`, `FAIL-115`, `FAIL-104`, and `PSX-PUB-016`.
+
+## 2026-09-04 v0.3.6 POSIX setup-copy candidate
+
+This candidate pins PSXRecomp 08ec704a974b1f3a16335b4afeb340b9eff19926 and recomp-ui be8ac1d03ee19d55394b5a5f2d9d1506edd56659.
+Linux and macOS packages use native CMake, Ninja, Python, C, and C++ tools.
+Windows keeps the portable toolchain route. This change does not change game
+code or the graduation state. Build-only CI and every exact-package release
+gate must pass before publication.
