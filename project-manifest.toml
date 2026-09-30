@@ -34,3 +34,9 @@ supported_platforms = ["windows-x64", "linux-x64", "macos-arm64", "macos-x64"]
 graduation_state = "bootstrap_verified"
 private_gameplay_confirmed = true
 public_package_status = "v0.3.6_three_platform_candidate"
+
+[bios]
+required = true
+profile = "SCPH1001"
+size = 524288
+sha256 = "71af94d1e47a68c11e8fdb9f8368040601514a42a5a399cda48c7d3bff1e99d3"
