@@ -44,6 +44,7 @@ strict = true
 openbios = false
 window_title = "die-hard-trilogy- Recompiled"
 memcard_dir = "saves"
+overlay_cache = true
 
 [video]
 renderer = "opengl"
