@@ -42,6 +42,7 @@ strict = true
 
 [runtime]
 openbios = false
+bios_hle = true
 window_title = "die-hard-trilogy- Recompiled"
 memcard_dir = "saves"
 overlay_cache = true
